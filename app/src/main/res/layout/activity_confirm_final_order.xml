@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.ConfirmFinalOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_Combine"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/phonenum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.050000012" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            app:layout_constraintBottom_toBottomOf="@+id/firstname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/firstname"
+            app:layout_constraintTop_toTopOf="@+id/firstname" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:inputType="number"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/phone_number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/name_Combine"
+        app:layout_constraintStart_toStartOf="@+id/name_Combine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14999998" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phonenum"
+        android:paddingStart="10dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phonenum"
+        app:layout_constraintTop_toBottomOf="@+id/phonenum"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <EditText
+        android:id="@+id/city_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="City Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phonenum"
+        android:paddingStart="10dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Switch
+        android:id="@+id/send_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Location"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_name"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/confirm_final_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Confirm"
+        android:background="@drawable/buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_location"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_margin="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

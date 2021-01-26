@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="14dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/order_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:text="First name "
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:text="lastname"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/order_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="@color/black"
+                android:text="city"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="@color/black"
+                android:text="address"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="@color/black"
+                android:text="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="@color/black"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="@color/black"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="@color/black"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/shipped_btn"
+    android:text="Shipped"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

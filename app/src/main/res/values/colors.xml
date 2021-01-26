@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FC3F7</color>
+    <color name="colorPrimaryDark">#4FC3F7</color>
+    <color name="colorAccent">#4FC3F7</color>
+
+    <color name="yellow">#FFD00F</color>
+    <color name="black">#000</color>
+    <color name="green">#1DE9B6</color>
+
+    <color name="lbny">#4FC3F7</color>
+    <color name="DarkGrey">#546E79</color>
+    <color name="lightGrey">#CFD9DE</color>
+    <color name="phoshia">#D5C6C4</color>
+    <color name="lightbrown">#D8BE80</color>
+
+    <color name="dark_phoshia">#D5C3BD</color>
+
+</resources>

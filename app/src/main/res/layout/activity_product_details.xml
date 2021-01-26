@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.ProductDetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern" />
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/product_image_details"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/product_price_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="end"
+                        android:paddingEnd="10dp"
+                        android:text="Price"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:paddingEnd="10dp"
+                        android:text="EGP"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_description_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Description" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight=".40"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:gravity="center"
+                    android:text="Quantity"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/elegant_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    app:finalNumber="10"
+                    app:initialNumber="1"
+                    app:textSize="10sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_product_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_design"
+                android:text="Add To Cart" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

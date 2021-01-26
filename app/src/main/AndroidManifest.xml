@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shoppingapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Sellers.SellerHomeActivity"
+            android:label="@string/title_activity_seller_home"></activity>
+        <activity
+            android:name=".Sellers.SellerLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sellers.SellerRegistrationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.ResetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.AdminEditProductsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.SearchProductActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.AdminUserProductsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.AdminNewOrdersActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.ConfirmFinalOrderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Buyers.CartActivity" />
+        <activity
+            android:name=".Buyers.ProductDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin.AdminAddNewProductActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.AdminCategoryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Buyers.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SearchProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/search_edit_txt"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingStart="10dp"
+            android:background="@android:color/white"
+            android:hint="Product Name" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_btn"
+                android:background="@color/colorPrimary"
+                android:text="Search" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
+</androidx.constraintlayout.widget.ConstraintLayout>
